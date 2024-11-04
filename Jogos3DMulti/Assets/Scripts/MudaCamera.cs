@@ -12,6 +12,8 @@ public class MudaCamera : MonoBehaviour {
 		Cameras[1].enabled = false;
 		Cameras[2].enabled = false;
 		Cameras[3].enabled = false;
+		Cameras[4].enabled = false;
+		Cameras[5].enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -23,6 +25,8 @@ public class MudaCamera : MonoBehaviour {
 			Cameras[1].enabled = false;
 			Cameras[2].enabled = false;
 			Cameras[3].enabled = false;
+			Cameras[4].enabled = false;
+			Cameras[5].enabled = false;
 		}
 		
 		if (Input.GetKeyDown(KeyCode.J))
@@ -31,6 +35,8 @@ public class MudaCamera : MonoBehaviour {
 			Cameras[1].enabled = true;
 			Cameras[2].enabled = false;
 			Cameras[3].enabled = false;
+			Cameras[4].enabled = false;
+			Cameras[5].enabled = false;
 		}
 
 		if (Input.GetKeyDown(KeyCode.K))
@@ -39,6 +45,8 @@ public class MudaCamera : MonoBehaviour {
 			Cameras[1].enabled = false;
 			Cameras[2].enabled = true;
 			Cameras[3].enabled = false;
+			Cameras[4].enabled = false;
+			Cameras[5].enabled = false;
 		}
 
 		if (Input.GetKeyDown(KeyCode.L))
@@ -47,6 +55,28 @@ public class MudaCamera : MonoBehaviour {
 			Cameras[1].enabled = false;
 			Cameras[2].enabled = false;
 			Cameras[3].enabled = true;
+			Cameras[4].enabled = false;
+			Cameras[5].enabled = false;
+		}
+
+		if (Input.GetKeyDown(KeyCode.U))
+		{
+			Cameras[0].enabled = false;
+			Cameras[1].enabled = false;
+			Cameras[2].enabled = false;
+			Cameras[3].enabled = false;
+			Cameras[4].enabled = true;
+			Cameras[5].enabled = false;
+		}
+
+		if (Input.GetKeyDown(KeyCode.I))
+		{
+			Cameras[0].enabled = false;
+			Cameras[1].enabled = false;
+			Cameras[2].enabled = false;
+			Cameras[3].enabled = false;
+			Cameras[4].enabled = false;
+			Cameras[5].enabled = true;
 		}
 	}
 }
